@@ -1,0 +1,137 @@
+{
+  "backedUpAt": "2026-08-24T21:22:16.819Z",
+  "educationSystems": [
+    {
+      "id": "d0953294-489d-48c0-ba43-da4279220ae6",
+      "code": "SECONDARY_GENERAL",
+      "name": "الثانوية العامة",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.867Z",
+      "updatedAt": "2026-08-23T21:08:29.867Z"
+    }
+  ],
+  "educationalStages": [
+    {
+      "id": "05b1602a-8cc4-458d-80e0-a1a8bca04064",
+      "code": "SG_SECONDARY",
+      "name": "الثانوية العامة",
+      "educationSystemId": "d0953294-489d-48c0-ba43-da4279220ae6",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.870Z",
+      "updatedAt": "2026-08-23T21:08:29.870Z"
+    }
+  ],
+  "grades": [
+    {
+      "id": "94907545-b72a-4792-977d-94300759df0f",
+      "code": "SG_SEC_1",
+      "name": "الأول الثانوي",
+      "stageId": "05b1602a-8cc4-458d-80e0-a1a8bca04064",
+      "hasTracks": false,
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.873Z",
+      "updatedAt": "2026-08-23T21:08:29.873Z"
+    },
+    {
+      "id": "ddc1f964-dce5-4185-9796-1f71fd76b455",
+      "code": "SG_SEC_2",
+      "name": "الثاني الثانوي",
+      "stageId": "05b1602a-8cc4-458d-80e0-a1a8bca04064",
+      "hasTracks": true,
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.875Z",
+      "updatedAt": "2026-08-23T21:08:29.875Z"
+    },
+    {
+      "id": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "code": "SG_SEC_3",
+      "name": "الثالث الثانوي",
+      "stageId": "05b1602a-8cc4-458d-80e0-a1a8bca04064",
+      "hasTracks": true,
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.885Z",
+      "updatedAt": "2026-08-23T21:08:29.885Z"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "b8aad4a6-4144-4edc-b8f4-a3708186e8fb",
+      "code": "SG_SEC_2:SCIENCE",
+      "name": "علمي علوم",
+      "gradeId": "ddc1f964-dce5-4185-9796-1f71fd76b455",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.878Z",
+      "updatedAt": "2026-08-23T21:08:29.878Z"
+    },
+    {
+      "id": "be2a5088-ca2e-4d4f-9cb7-673f64f7d2ee",
+      "code": "SG_SEC_2:MATH",
+      "name": "علمي رياضة",
+      "gradeId": "ddc1f964-dce5-4185-9796-1f71fd76b455",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.880Z",
+      "updatedAt": "2026-08-23T21:08:29.880Z"
+    },
+    {
+      "id": "7d33a745-0366-4186-abb2-51399266713c",
+      "code": "SG_SEC_2:LITERARY",
+      "name": "أدبي",
+      "gradeId": "ddc1f964-dce5-4185-9796-1f71fd76b455",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.883Z",
+      "updatedAt": "2026-08-23T21:08:29.883Z"
+    },
+    {
+      "id": "f283abfb-41bf-48a9-9340-861a01a59cb0",
+      "code": "SG_SEC_3:SCIENCE",
+      "name": "علمي علوم",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.888Z",
+      "updatedAt": "2026-08-23T21:08:29.888Z"
+    },
+    {
+      "id": "0bc79bef-a4ac-4b22-96b2-2be214d30234",
+      "code": "SG_SEC_3:MATH",
+      "name": "علمي رياضة",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.890Z",
+      "updatedAt": "2026-08-23T21:08:29.890Z"
+    },
+    {
+      "id": "ced3b8e5-6c76-4432-8ad0-4e45cb533a7a",
+      "code": "SG_SEC_3:LITERARY",
+      "name": "أدبي",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "isActive": true,
+      "createdAt": "2026-08-23T21:08:29.892Z",
+      "updatedAt": "2026-08-23T21:08:29.892Z"
+    }
+  ],
+  "subjectAssignments": [],
+  "courseTargets": [
+    {
+      "id": "81576670-c7ef-4ae8-84d1-c6db2516ca6b",
+      "courseId": "f47ee0e1-fe4d-4d66-bf1c-fa7dfb4da420",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "trackId": "f283abfb-41bf-48a9-9340-861a01a59cb0",
+      "createdAt": "2026-08-24T09:00:09.133Z"
+    },
+    {
+      "id": "fa97fbdc-9235-4b3b-b676-95ed16ccbc2c",
+      "courseId": "f47ee0e1-fe4d-4d66-bf1c-fa7dfb4da420",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "trackId": "0bc79bef-a4ac-4b22-96b2-2be214d30234",
+      "createdAt": "2026-08-24T09:00:17.261Z"
+    },
+    {
+      "id": "77dfc870-7512-4f15-87f4-de3312eea5e0",
+      "courseId": "f47ee0e1-fe4d-4d66-bf1c-fa7dfb4da420",
+      "gradeId": "59e63453-c219-415f-9fcd-2d9cccc643ba",
+      "trackId": "ced3b8e5-6c76-4432-8ad0-4e45cb533a7a",
+      "createdAt": "2026-08-24T09:00:24.155Z"
+    }
+  ],
+  "studentEducationProfiles": []
+}
