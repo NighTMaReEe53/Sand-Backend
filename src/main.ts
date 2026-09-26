@@ -117,7 +117,7 @@ async function bootstrap() {
 
   // 7. Start Server
   try {
-    await app.listen(port);
+    await app.listen(port, "0.0.0.0");
   } catch (error) {
     const code = (error as NodeJS.ErrnoException)?.code;
     if (code === 'EADDRINUSE') {
