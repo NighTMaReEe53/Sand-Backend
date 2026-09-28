@@ -22,6 +22,9 @@ export class RegisterStudentDto {
   @IsString({ message: 'الاسم بالكامل يجب أن يكون نصاً' })
   @IsNotEmpty({ message: 'الاسم بالكامل مطلوب' })
   @Length(3, 100, { message: 'يجب أن يكون الاسم بين 3 و 100 حرف' })
+  @Matches(/\S+(?:\s+\S+){2,}/u, {
+    message: 'اكتب الاسم ثلاثياً على الأقل: الاسم الأول واسم الأب واسم الجد',
+  })
   fullName: string;
 
   @ApiProperty({ example: 'student@example.com', description: 'Unique email address' })

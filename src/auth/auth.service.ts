@@ -502,11 +502,12 @@ export class AuthService {
     dto: LoginDto,
     reqInfo: { ip?: string; userAgent?: string } = {},
   ): Promise<AuthResponseData> {
-    const email = dto.email.toLowerCase().trim();
+    const email = dto.email?.toLowerCase().trim();
+    const phone = dto.phone?.trim();
 
     // 1. البحث عن المستخدم
     const user = await this.prisma.user.findUnique({
-      where: { email },
+      where: email ? { email } : { phone: phone! },
       include: {
         studentProfile: true,
         teacherProfile: true,
